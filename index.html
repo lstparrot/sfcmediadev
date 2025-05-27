@@ -28,6 +28,19 @@
       align-items: center;
       gap: 2rem;
     }
+.logo img {
+  height: 50px;
+  width: auto;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(150, 90, 255, 0.9));
+}
+
+
     .nav-links {
       display: flex;
       gap: 1.5rem;
@@ -186,7 +199,10 @@
 </head>
 <body>
   <header>
-    <div class="logo">LOGO</div>
+    <div class="logo">
+  <img src="./image/img-1.jpg" alt="Logo" />
+</div>
+
     <div class="nav-wrapper">
       <nav class="nav-links">
         <a href="#trailer">Trailer</a>
